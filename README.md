@@ -4,7 +4,7 @@ An HTML page that has all possible HTML elements in it. You can use it for CSS p
 ## HTML Element List
 I have tried to list all html elements as found on MDN website, but, excluded those that are depreciated. So I found around 107 elements. I have prepared a table of the element name and link to mdn site for each element. I have also indicated those elements that I have added in the [sample html](public_html/index.html) file as ✅ and those not yet included as :x:. Below is the full list:
 
-| Sl no | Element          | Added | Details used 87 remaining 20 done 81 3084112149533                                    |
+| Sl no | Element          | Added | Details / used: 87 / remaining: 20 / done: 81.3%                                    |
 | :---- | :--------------- | :---- | :------------------------------------------------------------------------------------ |
 | 1     | a                | :white_check_mark: | https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a                |
 | 2     | abbr             | :white_check_mark:  | https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/abbr             |
