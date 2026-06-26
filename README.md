@@ -1,8 +1,8 @@
 # HTML5
-An HTML page that has all possible HTML elements in it. You can use it for CSS practice or as a template to build. Don't mind the chemistry paragraph
+An HTML page that has all HTML elements in it. You can use it for CSS practice or as a template to build. Don't mind the chemistry paragraphs.
 
 ## HTML Element List
-I have tried to list all html elements as found on MDN website, but, excluded those that are depreciated. So I found around 107 elements. I have prepared a table of the element name and link to mdn site for each element. I have also indicated those elements that I have added in the [sample html](public_html/index.html) file as ✅ and those not yet included as :x:. Below is the full list:
+I have tried to list all html elements as found on MDN website, but, excluded those that are depreciated. There are around 107 elements. I have prepared a table of the element name and link to mdn site for each element. I have also indicated those elements that I have added in the [sample html](public_html/index.html) file as ✅ and those not yet included as :x:. Below is the full list:
 
 | Sl no | Element          | Added | Details / used: 87 / remaining: 20 / done: 81.3%                                    |
 | :---- | :--------------- | :---- | :------------------------------------------------------------------------------------ |
@@ -115,4 +115,4 @@ I have tried to list all html elements as found on MDN website, but, excluded th
 | 107   | wbr              | :x: | https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/wbr              |
 
 ## My html site
-View the site at [fdiengdoh.github.io](https://fdiengdoh.github.io)
+View the site at [fdiengdoh.github.io/html5](https://fdiengdoh.github.io/html5)
