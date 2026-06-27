@@ -44,8 +44,12 @@
     <body>
         <!-- Header -->
         <header id="top">
-            <h1>HTML 5 Elements</h1>
-            <p>A man with a passion for design and chemistry <small><a href="https://fdh.pw" target="_blank">follow me</a></small></p>
+            <hgroup>
+                <h1>HTML 5 Elements</h1>
+                <p>A man with a passion for design and chemistry <small><a href="https://fdh.pw" target="_blank">follow me</a></small></p>
+                <p><small>I used chemistry text here as I have these content ready. I thought of using <a href="https://en.wikipedia.org/wiki/Lorem_ipsum" target="_blank">Lorem Ipsum</a>, but then why not something different?</small></p>
+            </hgroup>
+            
             <!-- Navigation -->
             <nav>
                 <ul>
@@ -54,12 +58,14 @@
                     <li><a href="#section3">On Quantum Mechanics</a></li>
                     <li><a href="#section4">Matrix-Multiplication</a></li>
                     <li><a href="#section5">List and Definition</a></li>
+                    <li><a href="#list-of-elements">List of Elements Added</a></li>
                     <li><a href="#section6">Remaining Elements</a></li>
 					<li><a href="https://github.com/fdiengdoh/fdiengdoh.github.io/html5" target="_blank">Github Repo of this site</a></li>
                     <li>
                         <search>
                             <form action="./?search=true">
-                                <input type="search" name="q">
+                                <label for="search-field"></label>
+                                <input type="search" id="search-field" name="q">
                                 <button type="submit">Search</button>
                             </form>
                         </search>
@@ -152,7 +158,7 @@
                             <p><em>Fig 2: Shape of px-, py- and pz-orbital</em></p>
                         </figcaption>
                     </figure>
-                    <p><strong>Hybridisation of Atomic Orbitals</strong>: In this concept <strong>atomic orbitals</strong> of different shapes and has a small difference in energy, mix together to form a new sets of orbitals known as <strong>hybridised orbitals</strong>. The hybridised orbitals are of the same shaped and energy (called degenerate orbitals). The total number of hybridised orbital is equal to the total number of atomic orbitals that are hybridised.</p>
+                    <p><strong>Hybridisation of Atomic Orbitals</strong>: In this concept <strong>atomic orbitals</strong> of different shapes and has a small difference in energy, <mark>mix together to form a new sets of orbitals known as <strong>hybridised orbitals</strong></mark>. The hybridised orbitals are of the same shaped and energy (called degenerate orbitals). The total number of hybridised orbital is equal to the total number of atomic orbitals that are hybridised.</p>
                     <p>For example, the s and p orbitals of the 2nd shell can mix to form hybrid orbitals as they have a small difference in energy but not between 1st and 2nd shell due to the large difference in energy. Thus, atomic orbitals like 2s and 2p can mix to form sp, sp<sup>2</sup> or sp<sup>3</sup> hybridised orbitals.</p>
                     <p>Carbon atom <strong>ground state</strong> electronic configuration is [He] 2s<sup>2</sup> 2p<sub>x</sub><sup>1</sup> 2p<sub>y</sub><sup>1</sup> 2p<sub>z</sub><sup>0</sup>. Now, since the energy between 2s and 2p orbital is small, on excitation, one of the electron form 2s can jump to 2p orbital. Thus, Carbon atom <strong>excited state</strong> electronic configuration is [He] 2s<sup>1</sup> 2p<sub>x</sub><sup>1</sup> 2p<sub>y</sub><sup>1</sup> 2p<sub>z</sub><sup>1</sup>. Here we see the excited state valence shell electronic configuration of carbon is 2s<sup>1</sup> 2p<sub>x</sub><sup>1</sup> 2p<sub>y</sub><sup>1</sup> 2p<sub>z</sub><sup>1</sup>. If the 2s orbital mix with 2p<sub>x</sub> orbital we get two sets of <strong>sp</strong> hybridised orbittals.</p>
                     <table>
@@ -663,6 +669,8 @@
                         <dt><dfn id="dfn-hybridisation">Hybridisation</dfn></dt>
                         <dd>It is a concept where atomic orbitals of different shapes that has a small difference in energy, mix together to form a new sets of orbitals known as <strong>hybridised orbitals</strong>.</dd>
                     </dl>
+                    <p id="list-of-elements"><strong>List of elements that I have used on this kitchen sink</strong></p>
+                    <iframe width="450" height="500" title="Link to Google Sheet on List of HTML elements" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4NdfHHARp0wDY-JDE4Bz5dEcYBvFCJUkfJlaOQklva28fX1QuD-ubBeS3h7RUbau27UAgMk8QLVRJ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
                     <hr>
                     <a href="#top">To Top</a>
                 </section>
@@ -670,12 +678,27 @@
                     <h6>Remaining Elements</h6>
                     <p>
                         How far have I used html elements:
-                        <meter low="20" high="80" max="107" value="87">81.3%</meter>
+                        <meter low="20" high="80" max="107" value="93">86.91%</meter>
                     </p>
-                    <iframe width="450" height="500" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4NdfHHARp0wDY-JDE4Bz5dEcYBvFCJUkfJlaOQklva28fX1QuD-ubBeS3h7RUbau27UAgMk8QLVRJ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                    <p>There is a <code>&lt;template&gt;</code> and <code>&lt;slot&gt;</code> element below not visible on a browser.</p>
+                    <template id="element-details-template">
+                        <details>
+                            <summary>
+                            <code class="name">
+                                &lt;<slot name="element-name">NEED NAME</slot>&gt;
+                            </code>
+                            <span class="desc"><slot name="description">NEED DESCRIPTION</slot></span>
+                            </summary>
+                            <div class="attributes">
+                            <h4>Attributes</h4>
+                            <slot name="attributes"><p>None</p></slot>
+                            </div>
+                        </details>
+                        <hr>
+                    </template>               
                     <p>
                         <label for="html5tags">Use of tags progress:</label>
-                        <progress id="html5tags" max="107" value="87">81%</progress>
+                        <progress id="html5tags" max="107" value="93">86.91%</progress>
                     </p>
                     <picture>
                         <source
@@ -731,6 +754,10 @@
                         </map>
                         <img usemap="#infographic" src="https://1977133b-d019-467a-9660-81af3481a9f7.mdnplay.dev/shared-assets/images/examples/mdn-info.png" alt="MDN infographic" >
                     </p>
+                    <video controls src="https://developer.mozilla.org/shared-assets/videos/friday.mp4">
+                        <track default kind="captions" srclang="en" label="English" src="https://developer.mozilla.org/shared-assets/misc/friday.vtt">
+                        Download the <a href="https://developer.mozilla.org/shared-assets/videos/friday.mp4">MP4</a> video, and <a href="https://developer.mozilla.org/shared-assets/misc/friday.vtt">subtitles</a>.
+                    </video>
                     <p>This page is compiled by:</p>
                     <address>
                         Farlando Diengdoh<br>
@@ -758,10 +785,6 @@
                         <p>
                             <label for="textarea-field">Textarea (Multi-line):</label><br>
                             <textarea id="textarea-field" name="textarea-field" rows="4" cols="40"></textarea>
-                        </p>
-                        <p>
-                            <label for="search-field">Search:</label>
-                            <input type="search" id="search-field" name="search-field">
                         </p>
                     </fieldset>
                     <!-- Validated & Structured Inputs -->
@@ -866,7 +889,9 @@
 							<input type="range" id="range-field" name="range-field" min="0" max="100">
 						</p>
 						<p>
+                            <label for="b"></label>
 							<input type="range" id="b" name="b" value="50"> +
+                            <label for="a"></label>
 							<input type="number" id="a" name="a" value="10"> =
 							<output name="result" for="a b">60</output>
 						</p>
